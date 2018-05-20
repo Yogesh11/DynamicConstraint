@@ -1,0 +1,580 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		529EAF1620B138D400C709AF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 529EAF1520B138D400C709AF /* AppDelegate.m */; };
+		529EAF1920B138D400C709AF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 529EAF1820B138D400C709AF /* ViewController.m */; };
+		529EAF1C20B138D400C709AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 529EAF1A20B138D400C709AF /* Main.storyboard */; };
+		529EAF1E20B138D800C709AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 529EAF1D20B138D800C709AF /* Assets.xcassets */; };
+		529EAF2120B138D800C709AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 529EAF1F20B138D800C709AF /* LaunchScreen.storyboard */; };
+		529EAF2420B138D800C709AF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 529EAF2320B138D800C709AF /* main.m */; };
+		529EAF2E20B138D900C709AF /* WiproExerciseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 529EAF2D20B138D900C709AF /* WiproExerciseTests.m */; };
+		529EAF3920B138D900C709AF /* WiproExerciseUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 529EAF3820B138D900C709AF /* WiproExerciseUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		529EAF2A20B138D900C709AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 529EAF0920B138D400C709AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 529EAF1020B138D400C709AF;
+			remoteInfo = WiproExercise;
+		};
+		529EAF3520B138D900C709AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 529EAF0920B138D400C709AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 529EAF1020B138D400C709AF;
+			remoteInfo = WiproExercise;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		529EAF1120B138D400C709AF /* WiproExercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WiproExercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		529EAF1420B138D400C709AF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		529EAF1520B138D400C709AF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		529EAF1720B138D400C709AF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		529EAF1820B138D400C709AF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		529EAF1B20B138D400C709AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		529EAF1D20B138D800C709AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		529EAF2020B138D800C709AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		529EAF2220B138D800C709AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		529EAF2320B138D800C709AF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		529EAF2920B138D900C709AF /* WiproExerciseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WiproExerciseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		529EAF2D20B138D900C709AF /* WiproExerciseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WiproExerciseTests.m; sourceTree = "<group>"; };
+		529EAF2F20B138D900C709AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		529EAF3420B138D900C709AF /* WiproExerciseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WiproExerciseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		529EAF3820B138D900C709AF /* WiproExerciseUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WiproExerciseUITests.m; sourceTree = "<group>"; };
+		529EAF3A20B138D900C709AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		529EAF0E20B138D400C709AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		529EAF2620B138D900C709AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		529EAF3120B138D900C709AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		529EAF0820B138D400C709AF = {
+			isa = PBXGroup;
+			children = (
+				529EAF1320B138D400C709AF /* WiproExercise */,
+				529EAF2C20B138D900C709AF /* WiproExerciseTests */,
+				529EAF3720B138D900C709AF /* WiproExerciseUITests */,
+				529EAF1220B138D400C709AF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		529EAF1220B138D400C709AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				529EAF1120B138D400C709AF /* WiproExercise.app */,
+				529EAF2920B138D900C709AF /* WiproExerciseTests.xctest */,
+				529EAF3420B138D900C709AF /* WiproExerciseUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		529EAF1320B138D400C709AF /* WiproExercise */ = {
+			isa = PBXGroup;
+			children = (
+				529EAF1420B138D400C709AF /* AppDelegate.h */,
+				529EAF1520B138D400C709AF /* AppDelegate.m */,
+				529EAF1720B138D400C709AF /* ViewController.h */,
+				529EAF1820B138D400C709AF /* ViewController.m */,
+				529EAF1A20B138D400C709AF /* Main.storyboard */,
+				529EAF1D20B138D800C709AF /* Assets.xcassets */,
+				529EAF1F20B138D800C709AF /* LaunchScreen.storyboard */,
+				529EAF2220B138D800C709AF /* Info.plist */,
+				529EAF2320B138D800C709AF /* main.m */,
+			);
+			path = WiproExercise;
+			sourceTree = "<group>";
+		};
+		529EAF2C20B138D900C709AF /* WiproExerciseTests */ = {
+			isa = PBXGroup;
+			children = (
+				529EAF2D20B138D900C709AF /* WiproExerciseTests.m */,
+				529EAF2F20B138D900C709AF /* Info.plist */,
+			);
+			path = WiproExerciseTests;
+			sourceTree = "<group>";
+		};
+		529EAF3720B138D900C709AF /* WiproExerciseUITests */ = {
+			isa = PBXGroup;
+			children = (
+				529EAF3820B138D900C709AF /* WiproExerciseUITests.m */,
+				529EAF3A20B138D900C709AF /* Info.plist */,
+			);
+			path = WiproExerciseUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		529EAF1020B138D400C709AF /* WiproExercise */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 529EAF3D20B138D900C709AF /* Build configuration list for PBXNativeTarget "WiproExercise" */;
+			buildPhases = (
+				529EAF0D20B138D400C709AF /* Sources */,
+				529EAF0E20B138D400C709AF /* Frameworks */,
+				529EAF0F20B138D400C709AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WiproExercise;
+			productName = WiproExercise;
+			productReference = 529EAF1120B138D400C709AF /* WiproExercise.app */;
+			productType = "com.apple.product-type.application";
+		};
+		529EAF2820B138D900C709AF /* WiproExerciseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 529EAF4020B138D900C709AF /* Build configuration list for PBXNativeTarget "WiproExerciseTests" */;
+			buildPhases = (
+				529EAF2520B138D900C709AF /* Sources */,
+				529EAF2620B138D900C709AF /* Frameworks */,
+				529EAF2720B138D900C709AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				529EAF2B20B138D900C709AF /* PBXTargetDependency */,
+			);
+			name = WiproExerciseTests;
+			productName = WiproExerciseTests;
+			productReference = 529EAF2920B138D900C709AF /* WiproExerciseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		529EAF3320B138D900C709AF /* WiproExerciseUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 529EAF4320B138D900C709AF /* Build configuration list for PBXNativeTarget "WiproExerciseUITests" */;
+			buildPhases = (
+				529EAF3020B138D900C709AF /* Sources */,
+				529EAF3120B138D900C709AF /* Frameworks */,
+				529EAF3220B138D900C709AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				529EAF3620B138D900C709AF /* PBXTargetDependency */,
+			);
+			name = WiproExerciseUITests;
+			productName = WiproExerciseUITests;
+			productReference = 529EAF3420B138D900C709AF /* WiproExerciseUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		529EAF0920B138D400C709AF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = test;
+				TargetAttributes = {
+					529EAF1020B138D400C709AF = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					529EAF2820B138D900C709AF = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 529EAF1020B138D400C709AF;
+					};
+					529EAF3320B138D900C709AF = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 529EAF1020B138D400C709AF;
+					};
+				};
+			};
+			buildConfigurationList = 529EAF0C20B138D400C709AF /* Build configuration list for PBXProject "WiproExercise" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 529EAF0820B138D400C709AF;
+			productRefGroup = 529EAF1220B138D400C709AF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				529EAF1020B138D400C709AF /* WiproExercise */,
+				529EAF2820B138D900C709AF /* WiproExerciseTests */,
+				529EAF3320B138D900C709AF /* WiproExerciseUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		529EAF0F20B138D400C709AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				529EAF2120B138D800C709AF /* LaunchScreen.storyboard in Resources */,
+				529EAF1E20B138D800C709AF /* Assets.xcassets in Resources */,
+				529EAF1C20B138D400C709AF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		529EAF2720B138D900C709AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		529EAF3220B138D900C709AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		529EAF0D20B138D400C709AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				529EAF1920B138D400C709AF /* ViewController.m in Sources */,
+				529EAF2420B138D800C709AF /* main.m in Sources */,
+				529EAF1620B138D400C709AF /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		529EAF2520B138D900C709AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				529EAF2E20B138D900C709AF /* WiproExerciseTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		529EAF3020B138D900C709AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				529EAF3920B138D900C709AF /* WiproExerciseUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		529EAF2B20B138D900C709AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 529EAF1020B138D400C709AF /* WiproExercise */;
+			targetProxy = 529EAF2A20B138D900C709AF /* PBXContainerItemProxy */;
+		};
+		529EAF3620B138D900C709AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 529EAF1020B138D400C709AF /* WiproExercise */;
+			targetProxy = 529EAF3520B138D900C709AF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		529EAF1A20B138D400C709AF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				529EAF1B20B138D400C709AF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		529EAF1F20B138D800C709AF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				529EAF2020B138D800C709AF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		529EAF3B20B138D900C709AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		529EAF3C20B138D900C709AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		529EAF3E20B138D900C709AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = WiproExercise/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Test.WiproExercise;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		529EAF3F20B138D900C709AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = WiproExercise/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Test.WiproExercise;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		529EAF4120B138D900C709AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WiproExerciseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Test.WiproExerciseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WiproExercise.app/WiproExercise";
+			};
+			name = Debug;
+		};
+		529EAF4220B138D900C709AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WiproExerciseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Test.WiproExerciseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WiproExercise.app/WiproExercise";
+			};
+			name = Release;
+		};
+		529EAF4420B138D900C709AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WiproExerciseUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Test.WiproExerciseUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WiproExercise;
+			};
+			name = Debug;
+		};
+		529EAF4520B138D900C709AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WiproExerciseUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Test.WiproExerciseUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WiproExercise;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		529EAF0C20B138D400C709AF /* Build configuration list for PBXProject "WiproExercise" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				529EAF3B20B138D900C709AF /* Debug */,
+				529EAF3C20B138D900C709AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		529EAF3D20B138D900C709AF /* Build configuration list for PBXNativeTarget "WiproExercise" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				529EAF3E20B138D900C709AF /* Debug */,
+				529EAF3F20B138D900C709AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		529EAF4020B138D900C709AF /* Build configuration list for PBXNativeTarget "WiproExerciseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				529EAF4120B138D900C709AF /* Debug */,
+				529EAF4220B138D900C709AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		529EAF4320B138D900C709AF /* Build configuration list for PBXNativeTarget "WiproExerciseUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				529EAF4420B138D900C709AF /* Debug */,
+				529EAF4520B138D900C709AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 529EAF0920B138D400C709AF /* Project object */;
+}
