@@ -22,6 +22,8 @@
 		52E9A20620B142DB0039E458 /* Feed.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E9A20520B142DB0039E458 /* Feed.m */; };
 		52E9A20920B146EC0039E458 /* Error.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E9A20820B146EC0039E458 /* Error.m */; };
 		52E9A20C20B14C0E0039E458 /* ApiCall.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E9A20B20B14C0E0039E458 /* ApiCall.m */; };
+		52E9A21120B16DB60039E458 /* Constant.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E9A21020B16DB60039E458 /* Constant.m */; };
+		52E9A21520B171B20039E458 /* FeedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E9A21420B171B20039E458 /* FeedCell.m */; };
 		B50F02E6D284C1DB68F72661 /* libPods-WiproExerciseTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DDAD046C844477D9E0171BF /* libPods-WiproExerciseTests.a */; };
 		DC15E2D6360DD2E722B8D288 /* libPods-WiproExerciseUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E53673433A3531A03233016 /* libPods-WiproExerciseUITests.a */; };
 /* End PBXBuildFile section */
@@ -74,6 +76,9 @@
 		52E9A20820B146EC0039E458 /* Error.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Error.m; sourceTree = "<group>"; };
 		52E9A20A20B14C0E0039E458 /* ApiCall.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApiCall.h; sourceTree = "<group>"; };
 		52E9A20B20B14C0E0039E458 /* ApiCall.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApiCall.m; sourceTree = "<group>"; };
+		52E9A21020B16DB60039E458 /* Constant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constant.m; sourceTree = "<group>"; };
+		52E9A21320B171B20039E458 /* FeedCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeedCell.h; sourceTree = "<group>"; };
+		52E9A21420B171B20039E458 /* FeedCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeedCell.m; sourceTree = "<group>"; };
 		5D453DE506E7882F16996D80 /* Pods-WiproExerciseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WiproExerciseTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WiproExerciseTests/Pods-WiproExerciseTests.debug.xcconfig"; sourceTree = "<group>"; };
 		61513FBEA42F2BAA93C7EA5A /* Pods-WiproExerciseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WiproExerciseTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WiproExerciseTests/Pods-WiproExerciseTests.release.xcconfig"; sourceTree = "<group>"; };
 		77C1ED2DD2D5B15BEA1F2D29 /* Pods-WiproExerciseUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WiproExerciseUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WiproExerciseUITests/Pods-WiproExerciseUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -147,6 +152,7 @@
 		529EAF1320B138D400C709AF /* WiproExercise */ = {
 			isa = PBXGroup;
 			children = (
+				52E9A21220B171990039E458 /*  Cells */,
 				52E9A1FD20B141110039E458 /* Manager */,
 				52E9A1FB20B1407E0039E458 /* Utility */,
 				52CCA23820B13FAE0039AC45 /* Controller */,
@@ -205,6 +211,7 @@
 		52E9A1FB20B1407E0039E458 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				52E9A21020B16DB60039E458 /* Constant.m */,
 				52E9A1FC20B1407E0039E458 /* Constant.h */,
 				52E9A20A20B14C0E0039E458 /* ApiCall.h */,
 				52E9A20B20B14C0E0039E458 /* ApiCall.m */,
@@ -221,6 +228,15 @@
 				52E9A20220B1414B0039E458 /* ApiManager.m */,
 			);
 			path = Manager;
+			sourceTree = "<group>";
+		};
+		52E9A21220B171990039E458 /*  Cells */ = {
+			isa = PBXGroup;
+			children = (
+				52E9A21320B171B20039E458 /* FeedCell.h */,
+				52E9A21420B171B20039E458 /* FeedCell.m */,
+			);
+			path = " Cells";
 			sourceTree = "<group>";
 		};
 		B8D261FA754B7F32081AC831 /* Pods */ = {
@@ -528,6 +544,8 @@
 				52E9A20C20B14C0E0039E458 /* ApiCall.m in Sources */,
 				529EAF2420B138D800C709AF /* main.m in Sources */,
 				529EAF1620B138D400C709AF /* AppDelegate.m in Sources */,
+				52E9A21520B171B20039E458 /* FeedCell.m in Sources */,
+				52E9A21120B16DB60039E458 /* Constant.m in Sources */,
 				52E9A20320B1414B0039E458 /* ApiManager.m in Sources */,
 				52CCA23B20B13FC90039AC45 /* ViewController.m in Sources */,
 				52E9A20920B146EC0039E458 /* Error.m in Sources */,
@@ -707,7 +725,10 @@
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = WiproExercise/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Test.WiproExercise;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -724,7 +745,10 @@
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = WiproExercise/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Test.WiproExercise;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -739,7 +763,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = WiproExerciseTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Test.WiproExerciseTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -754,7 +782,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = WiproExerciseTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Test.WiproExerciseTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -768,7 +800,11 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = WiproExerciseUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Test.WiproExerciseUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -782,7 +818,11 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = WiproExerciseUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Test.WiproExerciseUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -20,17 +20,12 @@
            message :(NSString *)  errorMessage
          errorCode :(NSInteger)   errorCode {
 
-    title            = [self checkForValidString:errorTitle]   ? errorTitle   : kErrorTitle      ;
-    message          = [self checkForValidString:errorMessage] ? errorMessage : kErrorMessage    ;
-    self.errorCode   = (errorCode == 0)                        ?  kErrorCode  : errorCode        ;
+    title            = [Constant validString:errorTitle]   ? errorTitle   : kErrorTitle      ;
+    message          = [Constant validString:errorMessage] ? errorMessage : kErrorMessage    ;
+    self.errorCode   = (errorCode == 0)                    ?  kErrorCode  : errorCode        ;
 }
 
 
--(BOOL)checkForValidString:(NSString *)str{
-    if(str  && str.length > 0 ) {
-        return  true ;
-    }
-    return  false ;
-}
+
 
 @end

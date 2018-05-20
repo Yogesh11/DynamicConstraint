@@ -1,4 +1,4 @@
-//
+    //
 //  ViewController.m
 //  WiproExercise
 //
@@ -10,14 +10,19 @@
 #import "ApiManager.h"
 #import "DataManager.h"
 #import "Error.h"
-
+#import "Row.h"
+#import "FeedCell.h"
+#import <SVProgressHUD.h>
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
-@property (nonatomic, strong) UITableView *tableLayout;
+@property (nonatomic, strong) UITableView      *tableLayout   ;
+@property (nonatomic, strong) UIRefreshControl *refreshControl;
+
 @end
 
 @implementation ViewController
 @synthesize tableLayout;
+@synthesize refreshControl;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -36,27 +41,44 @@
     tableLayout.delegate    = self;
     tableLayout.dataSource  = self;
     tableLayout.autoresizingMask = (UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight);
+    tableLayout.rowHeight        = UITableViewAutomaticDimension;
+    tableLayout.tableFooterView  = [[UIView alloc] initWithFrame:CGRectZero];
     [[self view] addSubview:tableLayout];
+    [self addRefreshView];
+}
+
+-(void)addRefreshView{
+    refreshControl = [[UIRefreshControl alloc]init];
+    [tableLayout addSubview:refreshControl];
+    [refreshControl addTarget:self action:@selector(refreshTable) forControlEvents:UIControlEventValueChanged];
+}
+
+-(void)refreshTable{
+    [refreshControl endRefreshing];
+    [self callApi];
 }
 
 -(void)updateUI{
-
+    [tableLayout reloadData];
+    self.navigationItem.title = [[DataManager sharedInstance] currentFeed].title;
 }
 
 -(void)callApi {
+    [SVProgressHUD show];
     [[ApiManager sharedInstance] jsonFeed:^(NSDictionary *response, Error *error) {
         if (error) {
             [self showAlert:error];
         } else{
-
+            [self updateUI];
         }
+        [SVProgressHUD dismiss];
     }];
 }
 
 #pragma mark - AlertSpecific function
 -(void)showAlert: (Error *) error{
     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:error.title message:error.message delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
-    [[self view] addSubview:alertView];
+    [alertView show];
 }
 
 #pragma mark TableView Delegate And DataSourceSpecific functions
@@ -65,7 +87,18 @@
 }
 
 -(UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return  nil ;
+    static NSString *cellIdentifier = @"CellIdentifier";
+    FeedCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    if (cell == nil) {
+        cell = [[FeedCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+    }
+    __weak Row *row = [[[[DataManager sharedInstance] currentFeed] rows] objectAtIndex:indexPath.row];
+    [cell updateFeed:row];
+    return  cell ;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 100;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {

@@ -16,7 +16,7 @@
 
 -(void)prepareModel : (NSDictionary *)json{
     rows                 = [[NSMutableArray alloc] init];
-    title                = [json valueForKey:kTitle];
+    title                =  [Constant validString:[json valueForKey:kTitle]];
     NSArray *rowsStorage = [json valueForKey: kRows];
     for(NSDictionary *dict in rowsStorage) {
         Row *row =  [[Row alloc] init];
@@ -24,5 +24,6 @@
         [rows addObject  : row];
     }
 }
+
 
 @end

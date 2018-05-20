@@ -14,17 +14,9 @@
 @synthesize subtitle;
 @synthesize imageHref;
 
-- (id)init {
-    self = [super init];
-    if (self) {
-        
-    }
-    return self;
-}
-
 -(void)prepareModel :(NSDictionary *)json {
-   title        = [json valueForKey: kTitle]       ;
-   subtitle     = [json valueForKey: kdescription] ;
-   imageHref    = [json valueForKey: kimageHref]   ;
+   title        = [Constant validString:[json valueForKey: kTitle]]       ;
+   subtitle     = [Constant validString:[json valueForKey: kdescription]] ;
+   imageHref    = [Constant validString:[json valueForKey: kimageHref]]   ;
 }
 @end

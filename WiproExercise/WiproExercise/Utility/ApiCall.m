@@ -22,7 +22,7 @@
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:kJsonUrl]];
     request.timeoutInterval = 60.0;
     NSURLConnection *conn = [[NSURLConnection alloc] initWithRequest:request delegate:self];
-    NSLog(@"Connection = %@", conn);
+    NSLog(@"Connection Start = %@", conn);
 }
 
 -(BOOL)validResponseData{
@@ -87,6 +87,8 @@
         } else{
             [self success:jsonDict];
         }
+    } else{
+        [self failure:nil];
     }
 }
 
