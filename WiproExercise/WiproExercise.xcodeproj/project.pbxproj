@@ -8,13 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		529EAF1620B138D400C709AF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 529EAF1520B138D400C709AF /* AppDelegate.m */; };
-		529EAF1920B138D400C709AF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 529EAF1820B138D400C709AF /* ViewController.m */; };
 		529EAF1C20B138D400C709AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 529EAF1A20B138D400C709AF /* Main.storyboard */; };
 		529EAF1E20B138D800C709AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 529EAF1D20B138D800C709AF /* Assets.xcassets */; };
 		529EAF2120B138D800C709AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 529EAF1F20B138D800C709AF /* LaunchScreen.storyboard */; };
 		529EAF2420B138D800C709AF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 529EAF2320B138D800C709AF /* main.m */; };
 		529EAF2E20B138D900C709AF /* WiproExerciseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 529EAF2D20B138D900C709AF /* WiproExerciseTests.m */; };
 		529EAF3920B138D900C709AF /* WiproExerciseUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 529EAF3820B138D900C709AF /* WiproExerciseUITests.m */; };
+		52CCA23720B13F840039AC45 /* Row.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CCA23520B13F840039AC45 /* Row.m */; };
+		52CCA23B20B13FC90039AC45 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CCA23A20B13FC90039AC45 /* ViewController.m */; };
+		52E9A20020B141410039E458 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E9A1FF20B141410039E458 /* DataManager.m */; };
+		52E9A20320B1414B0039E458 /* ApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E9A20220B1414B0039E458 /* ApiManager.m */; };
+		52E9A20620B142DB0039E458 /* Feed.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E9A20520B142DB0039E458 /* Feed.m */; };
+		52E9A20920B146EC0039E458 /* Error.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E9A20820B146EC0039E458 /* Error.m */; };
+		52E9A20C20B14C0E0039E458 /* ApiCall.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E9A20B20B14C0E0039E458 /* ApiCall.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +44,6 @@
 		529EAF1120B138D400C709AF /* WiproExercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WiproExercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		529EAF1420B138D400C709AF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		529EAF1520B138D400C709AF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		529EAF1720B138D400C709AF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		529EAF1820B138D400C709AF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		529EAF1B20B138D400C709AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		529EAF1D20B138D800C709AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		529EAF2020B138D800C709AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +55,21 @@
 		529EAF3420B138D900C709AF /* WiproExerciseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WiproExerciseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		529EAF3820B138D900C709AF /* WiproExerciseUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WiproExerciseUITests.m; sourceTree = "<group>"; };
 		529EAF3A20B138D900C709AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52CCA23520B13F840039AC45 /* Row.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Row.m; sourceTree = "<group>"; };
+		52CCA23620B13F840039AC45 /* Row.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Row.h; sourceTree = "<group>"; };
+		52CCA23920B13FC90039AC45 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		52CCA23A20B13FC90039AC45 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		52E9A1FC20B1407E0039E458 /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		52E9A1FE20B141410039E458 /* DataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		52E9A1FF20B141410039E458 /* DataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		52E9A20120B1414B0039E458 /* ApiManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApiManager.h; sourceTree = "<group>"; };
+		52E9A20220B1414B0039E458 /* ApiManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApiManager.m; sourceTree = "<group>"; };
+		52E9A20420B142DB0039E458 /* Feed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Feed.h; sourceTree = "<group>"; };
+		52E9A20520B142DB0039E458 /* Feed.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Feed.m; sourceTree = "<group>"; };
+		52E9A20720B146EC0039E458 /* Error.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Error.h; sourceTree = "<group>"; };
+		52E9A20820B146EC0039E458 /* Error.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Error.m; sourceTree = "<group>"; };
+		52E9A20A20B14C0E0039E458 /* ApiCall.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApiCall.h; sourceTree = "<group>"; };
+		52E9A20B20B14C0E0039E458 /* ApiCall.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApiCall.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +120,12 @@
 		529EAF1320B138D400C709AF /* WiproExercise */ = {
 			isa = PBXGroup;
 			children = (
+				52E9A1FD20B141110039E458 /* Manager */,
+				52E9A1FB20B1407E0039E458 /* Utility */,
+				52CCA23820B13FAE0039AC45 /* Controller */,
+				52CCA23420B13F840039AC45 /* Model */,
 				529EAF1420B138D400C709AF /* AppDelegate.h */,
 				529EAF1520B138D400C709AF /* AppDelegate.m */,
-				529EAF1720B138D400C709AF /* ViewController.h */,
-				529EAF1820B138D400C709AF /* ViewController.m */,
 				529EAF1A20B138D400C709AF /* Main.storyboard */,
 				529EAF1D20B138D800C709AF /* Assets.xcassets */,
 				529EAF1F20B138D800C709AF /* LaunchScreen.storyboard */,
@@ -130,6 +151,49 @@
 				529EAF3A20B138D900C709AF /* Info.plist */,
 			);
 			path = WiproExerciseUITests;
+			sourceTree = "<group>";
+		};
+		52CCA23420B13F840039AC45 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				52CCA23520B13F840039AC45 /* Row.m */,
+				52CCA23620B13F840039AC45 /* Row.h */,
+				52E9A20420B142DB0039E458 /* Feed.h */,
+				52E9A20520B142DB0039E458 /* Feed.m */,
+				52E9A20720B146EC0039E458 /* Error.h */,
+				52E9A20820B146EC0039E458 /* Error.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		52CCA23820B13FAE0039AC45 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				52CCA23920B13FC90039AC45 /* ViewController.h */,
+				52CCA23A20B13FC90039AC45 /* ViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		52E9A1FB20B1407E0039E458 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				52E9A1FC20B1407E0039E458 /* Constant.h */,
+				52E9A20A20B14C0E0039E458 /* ApiCall.h */,
+				52E9A20B20B14C0E0039E458 /* ApiCall.m */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		52E9A1FD20B141110039E458 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				52E9A1FE20B141410039E458 /* DataManager.h */,
+				52E9A1FF20B141410039E458 /* DataManager.m */,
+				52E9A20120B1414B0039E458 /* ApiManager.h */,
+				52E9A20220B1414B0039E458 /* ApiManager.m */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,9 +326,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				529EAF1920B138D400C709AF /* ViewController.m in Sources */,
+				52E9A20C20B14C0E0039E458 /* ApiCall.m in Sources */,
 				529EAF2420B138D800C709AF /* main.m in Sources */,
 				529EAF1620B138D400C709AF /* AppDelegate.m in Sources */,
+				52E9A20320B1414B0039E458 /* ApiManager.m in Sources */,
+				52CCA23B20B13FC90039AC45 /* ViewController.m in Sources */,
+				52E9A20920B146EC0039E458 /* Error.m in Sources */,
+				52CCA23720B13F840039AC45 /* Row.m in Sources */,
+				52E9A20020B141410039E458 /* DataManager.m in Sources */,
+				52E9A20620B142DB0039E458 /* Feed.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +506,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = WiproExercise/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -454,6 +525,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = WiproExercise/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
