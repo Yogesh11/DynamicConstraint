@@ -42,6 +42,8 @@
     tableLayout.dataSource  = self;
     tableLayout.autoresizingMask = (UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight);
     tableLayout.rowHeight        = UITableViewAutomaticDimension;
+    tableLayout.separatorStyle   = UITableViewCellSeparatorStyleNone;
+    tableLayout.backgroundColor  = [UIColor colorWithRed:247.0/255.0 green:247.0/255.0 blue:247.0/255.0 alpha:1.0];
     tableLayout.tableFooterView  = [[UIView alloc] initWithFrame:CGRectZero];
     [[self view] addSubview:tableLayout];
     [self addRefreshView];
@@ -92,13 +94,23 @@
     if (cell == nil) {
         cell = [[FeedCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     }
-    __weak Row *row = [[[[DataManager sharedInstance] currentFeed] rows] objectAtIndex:indexPath.row];
+     Row *row = [[[[DataManager sharedInstance] currentFeed] rows] objectAtIndex:indexPath.row];
     [cell updateFeed:row];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return  cell ;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 100;
+}
+
+-(CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+     Row *row = [[[[DataManager sharedInstance] currentFeed] rows] objectAtIndex:indexPath.row];
+    if ([row isAValidObject] == false) {
+        return 0;
+    }
+    return UITableViewAutomaticDimension;
+
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {

@@ -19,4 +19,11 @@
    subtitle     = [Constant validString:[json valueForKey: kdescription]] ;
    imageHref    = [Constant validString:[json valueForKey: kimageHref]]   ;
 }
+
+-(BOOL)isAValidObject {
+    if (title == nil && subtitle == nil && imageHref == nil) {
+        return false ;
+    }
+    return  true ;
+}
 @end

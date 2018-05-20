@@ -12,4 +12,5 @@
 @property (nonatomic, strong) NSString *subtitle;
 @property (nonatomic, strong) NSString *imageHref;
 -(void)prepareModel :(NSDictionary *)json;
+-(BOOL)isAValidObject ;
 @end

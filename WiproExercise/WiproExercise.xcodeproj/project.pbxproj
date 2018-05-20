@@ -24,6 +24,7 @@
 		52E9A20C20B14C0E0039E458 /* ApiCall.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E9A20B20B14C0E0039E458 /* ApiCall.m */; };
 		52E9A21120B16DB60039E458 /* Constant.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E9A21020B16DB60039E458 /* Constant.m */; };
 		52E9A21520B171B20039E458 /* FeedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E9A21420B171B20039E458 /* FeedCell.m */; };
+		52E9A21920B19E830039E458 /* FeedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E9A21820B19E830039E458 /* FeedView.m */; };
 		B50F02E6D284C1DB68F72661 /* libPods-WiproExerciseTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DDAD046C844477D9E0171BF /* libPods-WiproExerciseTests.a */; };
 		DC15E2D6360DD2E722B8D288 /* libPods-WiproExerciseUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E53673433A3531A03233016 /* libPods-WiproExerciseUITests.a */; };
 /* End PBXBuildFile section */
@@ -79,6 +80,8 @@
 		52E9A21020B16DB60039E458 /* Constant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constant.m; sourceTree = "<group>"; };
 		52E9A21320B171B20039E458 /* FeedCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeedCell.h; sourceTree = "<group>"; };
 		52E9A21420B171B20039E458 /* FeedCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeedCell.m; sourceTree = "<group>"; };
+		52E9A21720B19E830039E458 /* FeedView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeedView.h; sourceTree = "<group>"; };
+		52E9A21820B19E830039E458 /* FeedView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeedView.m; sourceTree = "<group>"; };
 		5D453DE506E7882F16996D80 /* Pods-WiproExerciseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WiproExerciseTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WiproExerciseTests/Pods-WiproExerciseTests.debug.xcconfig"; sourceTree = "<group>"; };
 		61513FBEA42F2BAA93C7EA5A /* Pods-WiproExerciseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WiproExerciseTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WiproExerciseTests/Pods-WiproExerciseTests.release.xcconfig"; sourceTree = "<group>"; };
 		77C1ED2DD2D5B15BEA1F2D29 /* Pods-WiproExerciseUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WiproExerciseUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WiproExerciseUITests/Pods-WiproExerciseUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -152,6 +155,7 @@
 		529EAF1320B138D400C709AF /* WiproExercise */ = {
 			isa = PBXGroup;
 			children = (
+				52E9A21620B19E760039E458 /* View */,
 				52E9A21220B171990039E458 /*  Cells */,
 				52E9A1FD20B141110039E458 /* Manager */,
 				52E9A1FB20B1407E0039E458 /* Utility */,
@@ -237,6 +241,15 @@
 				52E9A21420B171B20039E458 /* FeedCell.m */,
 			);
 			path = " Cells";
+			sourceTree = "<group>";
+		};
+		52E9A21620B19E760039E458 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				52E9A21720B19E830039E458 /* FeedView.h */,
+				52E9A21820B19E830039E458 /* FeedView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		B8D261FA754B7F32081AC831 /* Pods */ = {
@@ -541,6 +554,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52E9A21920B19E830039E458 /* FeedView.m in Sources */,
 				52E9A20C20B14C0E0039E458 /* ApiCall.m in Sources */,
 				529EAF2420B138D800C709AF /* main.m in Sources */,
 				529EAF1620B138D400C709AF /* AppDelegate.m in Sources */,
