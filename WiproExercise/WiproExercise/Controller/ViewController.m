@@ -8,25 +8,70 @@
 
 #import "ViewController.h"
 #import "ApiManager.h"
-@interface ViewController ()
+#import "DataManager.h"
+#import "Error.h"
 
+
+@interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
+@property (nonatomic, strong) UITableView *tableLayout;
 @end
 
 @implementation ViewController
+@synthesize tableLayout;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [[ApiManager sharedInstance] jsonFeed:^(NSDictionary *response, Error *error) {
-        NSLog(@"Json = %@",response);
-    }];
-
+    [self prepareUI];
+    [self callApi];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+-(void)prepareUI{
+    tableLayout = [[UITableView alloc] initWithFrame:self.view.frame style:UITableViewStylePlain];
+    tableLayout.delegate    = self;
+    tableLayout.dataSource  = self;
+    tableLayout.autoresizingMask = (UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight);
+    [[self view] addSubview:tableLayout];
+}
+
+-(void)updateUI{
+
+}
+
+-(void)callApi {
+    [[ApiManager sharedInstance] jsonFeed:^(NSDictionary *response, Error *error) {
+        if (error) {
+            [self showAlert:error];
+        } else{
+
+        }
+    }];
+}
+
+#pragma mark - AlertSpecific function
+-(void)showAlert: (Error *) error{
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:error.title message:error.message delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+    [[self view] addSubview:alertView];
+}
+
+#pragma mark TableView Delegate And DataSourceSpecific functions
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return  [[[[DataManager sharedInstance] currentFeed] rows] count];
+}
+
+-(UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return  nil ;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:true];
+}
+
 
 /*
 #pragma mark - Navigation
